@@ -7,12 +7,28 @@ class AnalogClock {
         Scanner scanner = new Scanner(System.in);
 
         //Reads ints from user
+        double angle = scanner.nextDouble();
 
-
-        /*
-         *  your code goes here
-         */
-
+        //code
+        int hours = 12;
+        int minutes = 0;
+        while (angle >= 360)
+        {
+          angle -= 360;
+        }
+        minutes = (int) (angle*2);
+        System.out.println(minutes);
+        while (minutes >= 60)
+        {
+          minutes -= 60;
+          hours++;
+        }
+        if (hours >= 13)
+        {
+          hours -= 12;
+        }
+        System.out.print(hours + ":");
+        System.out.printf("%02d%n", minutes);
         // closing the scanner object
         scanner.close();
     }
