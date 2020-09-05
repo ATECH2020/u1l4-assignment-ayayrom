@@ -25,7 +25,7 @@ class Timestamps {
         
         timeBetween = (((hoursTotal)*60)*60) + ((minutesTotal)*60) + secondsTotal;
         
-        System.out.println(timeBetween);
+        System.out.print(timeBetween);
 
         // closing the scanner object
         scanner.close();

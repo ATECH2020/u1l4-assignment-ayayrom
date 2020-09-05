@@ -41,7 +41,7 @@ class StudentDesks {
           class3 = class3/2;
         }
         totalDesks = class1+class2+class3;
-        System.out.println(totalDesks);
+        System.out.print(totalDesks);
         // closing the scanner object
         scanner.close();
     }
